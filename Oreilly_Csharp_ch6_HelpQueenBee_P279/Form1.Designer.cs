@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.AssignButton = new System.Windows.Forms.Button();
-            this.WorkerBeeJob = new System.Windows.Forms.ComboBox();
-            this.Shifts = new System.Windows.Forms.NumericUpDown();
-            this.Report = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Shifts = new System.Windows.Forms.NumericUpDown();
+            this.WorkerBeeJob = new System.Windows.Forms.ComboBox();
+            this.AssignButton = new System.Windows.Forms.Button();
+            this.Report = new System.Windows.Forms.TextBox();
             this.NextShift = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Shifts)).BeginInit();
@@ -54,14 +54,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Worker Bee Assignments";
             // 
-            // AssignButton
+            // label2
             // 
-            this.AssignButton.Location = new System.Drawing.Point(31, 65);
-            this.AssignButton.Name = "AssignButton";
-            this.AssignButton.Size = new System.Drawing.Size(248, 29);
-            this.AssignButton.TabIndex = 0;
-            this.AssignButton.Text = "Assign this job to a bee";
-            this.AssignButton.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(235, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 12);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Shifts";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Job";
+            // 
+            // Shifts
+            // 
+            this.Shifts.Location = new System.Drawing.Point(237, 37);
+            this.Shifts.Name = "Shifts";
+            this.Shifts.Size = new System.Drawing.Size(65, 22);
+            this.Shifts.TabIndex = 2;
             // 
             // WorkerBeeJob
             // 
@@ -79,12 +95,15 @@
             this.WorkerBeeJob.Size = new System.Drawing.Size(222, 20);
             this.WorkerBeeJob.TabIndex = 1;
             // 
-            // Shifts
+            // AssignButton
             // 
-            this.Shifts.Location = new System.Drawing.Point(237, 37);
-            this.Shifts.Name = "Shifts";
-            this.Shifts.Size = new System.Drawing.Size(65, 22);
-            this.Shifts.TabIndex = 2;
+            this.AssignButton.Location = new System.Drawing.Point(31, 65);
+            this.AssignButton.Name = "AssignButton";
+            this.AssignButton.Size = new System.Drawing.Size(248, 29);
+            this.AssignButton.TabIndex = 0;
+            this.AssignButton.Text = "Assign this job to a bee";
+            this.AssignButton.UseVisualStyleBackColor = true;
+            this.AssignButton.Click += new System.EventHandler(this.AssignButton_Click);
             // 
             // Report
             // 
@@ -93,24 +112,6 @@
             this.Report.Name = "Report";
             this.Report.Size = new System.Drawing.Size(527, 225);
             this.Report.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Job";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 12);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Shifts";
             // 
             // NextShift
             // 
@@ -121,6 +122,7 @@
             this.NextShift.TabIndex = 2;
             this.NextShift.Text = "Work the next shift";
             this.NextShift.UseVisualStyleBackColor = true;
+            this.NextShift.Click += new System.EventHandler(this.NextShift_Click);
             // 
             // Form1
             // 

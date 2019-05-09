@@ -22,6 +22,22 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
             workers[2] = new Worker(new string[] { "Hive maintenance", "Sting patrol" });
             workers[3] = new Worker(new string[] { "Nectar collector", "Honey manufacturing","Egg care",
                 "Baby bee tutoring","Hive maintenance","Sting patrol" });
-        }   queen = new Queen (workers);
-    }
+            queen = new Queen(workers);
+
+        }
+        private Queen queen;
+
+        private void AssignButton_Click(object sender, EventArgs e)
+        {
+            if (queen.AssignWork(WorkerBeeJob.Text, (int)Shifts.Value) == false)
+                MessageBox.Show("No workers are available to do the job '" + WorkerBeeJob.Text + "'", "The queen bee says...");
+            else
+                MessageBox.Show("The job '" + WorkerBeeJob.Text + "' will be done in" + Shifts.Value + " shifts", "The queen bee says...");
+        }
+
+        private void NextShift_Click(object sender, EventArgs e)
+        {
+            Report.Text = queen.WorkTheNextShift();
+        }
+    }    
 }
