@@ -10,7 +10,7 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
     {
         public Worker(string[] jobsICanDo)
         {
-            this.jobsICanDo;
+            this.jobsICanDo = jobsICanDo;
         }
 
         public int ShiftsLeft
@@ -38,9 +38,8 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                     shiftsWorked = 0;
                     return true;
                 }
-
             }
-            
+            return false; 
         }
 
         public bool DidYouFinish()

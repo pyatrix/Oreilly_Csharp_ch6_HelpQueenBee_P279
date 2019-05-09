@@ -20,15 +20,15 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
             {
                 if (workers[i].DoThisJob(job, numberOfShifts))
                     return true;
-                return false;
             }
+            return false;
         }
 
         public string WorkTheNextShift()
         {
             shiftNumber++;
             string report = "Report for shift #" + shiftNumber + "\r\n";
-            for (int i; i < workers.Length; i++)
+            for (int i =0; i < workers.Length; i++)
             {
                 if (workers[i].DidYouFinish())
                     report += "Worker #" + (i + 1) + "finished the job\r\n";
@@ -39,7 +39,7 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                     if (workers[i].ShiftsLeft > 0)
                     {
                         report += "Worker #" + (i + 1) + "is doing '" + workers[i].CurrentJob
-                            + "' for " + Worker[i].ShiftsLeft + " more shifts\r\n";
+                            + "' for " + workers[i].ShiftsLeft + " more shifts\r\n";
                     }
                     else
                     {
