@@ -21,7 +21,7 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                 if (workers[i].DoThisJob(job, numberOfShifts))
                     return true;
             }
-            return false;
+            return false;//
         }
 
         public string WorkTheNextShift()
