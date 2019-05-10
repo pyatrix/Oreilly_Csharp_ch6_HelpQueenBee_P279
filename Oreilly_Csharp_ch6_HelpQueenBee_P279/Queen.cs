@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
 {
-    class Queen
+    class Queen : Bee
     {
-        public Queen(Worker[] workers)
+        public Queen(Worker[] workers, double weightMg) : base(weightMg)
         {
             this.workers = workers;
+            
         }
         private Worker[] workers;
+        
         private int shiftNumber = 0;
+
         public bool AssignWork(string job, int numberOfShifts)
         {
             for (int i = 0; i < workers.Length; i++)
@@ -21,14 +24,14 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                 if (workers[i].DoThisJob(job, numberOfShifts))
                     return true;
             }
-            return false;//
+            return false;
         }
 
         public string WorkTheNextShift()
         {
             shiftNumber++;
             string report = "Report for shift #" + shiftNumber + "\r\n";
-            for (int i =0; i < workers.Length; i++)
+            for (int i = 0; i < workers.Length; i++)
             {
                 if (workers[i].DidYouFinish())
                     report += "Worker #" + (i + 1) + "finished the job\r\n";
@@ -49,6 +52,10 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                 }
             }
             return report;
+        }
+
+        internal class weightMg
+        {
         }
     }
 }
