@@ -29,10 +29,14 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
 
         public string WorkTheNextShift()
         {
+            double honeyConsumed = HoneyConsumptionRate();
+
             shiftNumber++;
             string report = "Report for shift #" + shiftNumber + "\r\n";
             for (int i = 0; i < workers.Length; i++)
             {
+                honeyConsumed += workers[i].HoneyConsumptionRate();
+
                 if (workers[i].DidYouFinish())
                     report += "Worker #" + (i + 1) + "finished the job\r\n";
                 if (string.IsNullOrEmpty(workers[i].CurrentJob))
@@ -51,6 +55,7 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
                     }
                 }
             }
+            report += "Total honey consumed for the shift: " + honeyConsumed + " units\r\n";
             return report;
         }
 

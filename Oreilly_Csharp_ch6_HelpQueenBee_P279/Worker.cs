@@ -13,6 +13,14 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
             this.jobsICanDo = jobsICanDo;
         }
 
+        const double honeyUnitsPerShiftWorked = .65;
+        override public double HoneyConsumptionRate()
+        {
+            double consumption = base.HoneyConsumptionRate();
+            consumption += shiftsWorked * honeyUnitsPerShiftWorked;
+            return consumption;
+        }
+
         public int ShiftsLeft
         {
             get { return shiftsToWork - shiftsWorked; }
