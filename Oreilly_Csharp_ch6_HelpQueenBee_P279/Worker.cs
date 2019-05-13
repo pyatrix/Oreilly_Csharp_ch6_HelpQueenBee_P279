@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
 {
-    class Worker : Bee
+    public class Worker : Bee
     {
         public Worker(string[] jobsICanDo, double weightMg) : base(weightMg)
         {

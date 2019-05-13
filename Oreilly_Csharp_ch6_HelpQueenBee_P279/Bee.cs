@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
 {
-    class Bee
+    public class Bee
     {
         public const double HoneyUnitsConsumedPerMg = .25;
         public double WeightMg { get; private set; }

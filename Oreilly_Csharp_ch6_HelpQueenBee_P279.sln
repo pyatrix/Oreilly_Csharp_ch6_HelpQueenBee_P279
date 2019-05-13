@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oreilly_Csharp_ch6_HelpQueenBee_P279", "Oreilly_Csharp_ch6_HelpQueenBee_P279\Oreilly_Csharp_ch6_HelpQueenBee_P279.csproj", "{6D1B85D9-9E61-44CF-98A9-B002405EB486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface_P299", "interface_P299\interface_P299.csproj", "{03754B58-20F6-428F-8750-8AC4CDC6E46D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6D1B85D9-9E61-44CF-98A9-B002405EB486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1B85D9-9E61-44CF-98A9-B002405EB486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1B85D9-9E61-44CF-98A9-B002405EB486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03754B58-20F6-428F-8750-8AC4CDC6E46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03754B58-20F6-428F-8750-8AC4CDC6E46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03754B58-20F6-428F-8750-8AC4CDC6E46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03754B58-20F6-428F-8750-8AC4CDC6E46D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
