@@ -13,6 +13,7 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
             this.workers = workers;
             
         }
+
         private Worker[] workers;
         
         private int shiftNumber = 0;
