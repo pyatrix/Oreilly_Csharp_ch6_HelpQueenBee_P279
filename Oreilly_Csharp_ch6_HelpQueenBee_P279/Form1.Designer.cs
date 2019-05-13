@@ -94,6 +94,7 @@
             this.WorkerBeeJob.Name = "WorkerBeeJob";
             this.WorkerBeeJob.Size = new System.Drawing.Size(222, 20);
             this.WorkerBeeJob.TabIndex = 1;
+            this.WorkerBeeJob.SelectedIndexChanged += new System.EventHandler(this.WorkerBeeJob_SelectedIndexChanged);
             // 
             // AssignButton
             // 

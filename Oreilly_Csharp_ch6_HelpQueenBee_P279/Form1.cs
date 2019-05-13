@@ -39,5 +39,12 @@ namespace Oreilly_Csharp_ch6_HelpQueenBee_P279
         {
             Report.Text = queen.WorkTheNextShift();
         }
+
+        private void WorkerBeeJob_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // test Master
     }
 }
